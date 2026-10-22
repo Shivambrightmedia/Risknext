@@ -712,3 +712,37 @@ h1 i {
         width: 78vw
     }
 }
+
+
+.pwa-install-btn {
+    position: fixed;
+    left: 24px;
+    bottom: 21px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--brand-yellow);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid rgba(239, 185, 11, .32);
+    padding: 9px 14px;
+    background: rgba(10, 16, 18, .85);
+    backdrop-filter: blur(8px);
+    transition: .2s;
+}
+
+.pwa-install-btn:hover {
+    background: rgba(239, 185, 11, .14);
+    border-color: rgba(239, 185, 11, .6);
+}
+
+@media(max-width:800px) {
+    .pwa-install-btn {
+        left: 12px;
+        bottom: 12px;
+    }
+}
